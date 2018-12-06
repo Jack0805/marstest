@@ -62,7 +62,11 @@ function move(orderLetter,Position,size){
   	return move(orderLetters.join(""), originalPosition.join(""),size);
     
 }
-
+/**
+ * @param {number[]} x contains two numbers as first one is x axis and second one is y axis
+ * @param {2D Array} y contains info for a group of rovers, which the first element (string) is the original position, the second (string) is the control letters.
+ * @return {2D Array} contains the final position for the group of rovers
+ */
 function solution(x,y){
   	let result = [];
 	for(let i = 0; i < y.length; i++){
@@ -70,5 +74,8 @@ function solution(x,y){
     }
   return result;
 }
+
+//Example of inputs:
+console.log(solution([5,5],[['12N','LMLMLMLMM'], ['33E','MMRMMRMRRM']]));
 
 export default solution

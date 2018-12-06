@@ -18,7 +18,7 @@ describe('group of test suits', () => {
 })
 
 // could do more tests in a comprehensive react poject, for example:
-//we have a web interface to allow users to input 1. siez of platform 2. A group of rovers having original position and control letters for each.
+//we have a web interface to allow users to input 1. size of platform 2. A group of rovers having original position and control letters for each.
 //In this case we will use a form to accept the inputs, so we can use something like:
 //wrapper.find('form#addRoverTasks').first().simulate('submit');
 //to check we store the correlated values into states (mock states in wapper) and pass to the function, we also may test how many rovers we added.
